@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <title>CyberSec 2025</title>
+    </head>
+    <body>
+        <header class="bg-[#5A4984] p-7">
+            <nav class="flex justify-between items-center w-[100%]">
+                <div>
+                    <img
+                        class="w-32"
+                        src="./imagens/logo_white.png"
+                        alt="Logo"
+                    />
+                </div>
+
+                <div
+                    class="nav-links bg-[#5A4984] duration-500 md:static absolute md:min-h-fit min-h-[250px] left-0 top-[-100%] md:w-auto w-full flex items-center justify-center px-5"
+                >
+                    <ul
+                        class="flex md:flex-row flex-col md:items-center md:gap-8 gap-8 text-white font-medium"
+                    >
+                        <li>
+                            <a class="hover:text-[#18CE9F]" href="#Sponsors"
+                                >Sponsors</a
+                            >
+                        </li>
+                        <li>
+                            <a class="hover:text-[#18CE9F]" href="#AboutUs"
+                                >About Us</a
+                            >
+                        </li>
+                        <li>
+                            <a class="hover:text-[#18CE9F]" href="#Schedule"
+                                >Schedule</a
+                            >
+                        </li>
+                        <li>
+                            <a class="hover:text-[#18CE9F]" href="#Speakers"
+                                >Speakers</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <a href="#" target="_blank" class="border-2 border-[#18CE9F] rounded-full py-3 px-8 text-[#18CE9F]">Join Now</a>
+
+                    <ion-icon
+                        name="menu"
+                        onclick="onToggleMenu(this)"
+                        class="text-2xl cursor-pointer md:hidden text-white"
+                    ></ion-icon>
+                </div>
+            </nav>
+        </header>
+        <script>
+            const navLink = document.querySelector(".nav-links");
+            function onToggleMenu(e) {
+                e.name = e.name === "menu" ? "close" : "menu";
+                navLink.classList.toggle("top-[108px]");
+            }
+        </script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
