@@ -5,6 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./output.css" rel="stylesheet" />
         <title>CyberSec 2025</title>
+        <style>
+            /* Add your CSS styles here */
+            @keyframes scroll {
+                /* 0% {
+                    transform: translateX(0%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                } */
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+
+            .scrolling-text {
+                animation: scroll 25s linear infinite;
+            }
+        </style>
     </head>
     <body>
         <header class="bg-[#5A4984] p-7">
@@ -24,11 +45,6 @@
                         class="flex md:flex-row flex-col md:items-center md:gap-8 gap-8 text-white font-medium"
                     >
                         <li>
-                            <a class="hover:text-[#18CE9F]" href="#Sponsors"
-                                >Sponsors</a
-                            >
-                        </li>
-                        <li>
                             <a class="hover:text-[#18CE9F]" href="#AboutUs"
                                 >About Us</a
                             >
@@ -41,6 +57,11 @@
                         <li>
                             <a class="hover:text-[#18CE9F]" href="#Speakers"
                                 >Speakers</a
+                            >
+                        </li>
+                        <li>
+                            <a class="hover:text-[#18CE9F]" href="#Sponsors"
+                                >Sponsors</a
                             >
                         </li>
                     </ul>
@@ -67,13 +88,14 @@
             class="bg-[#5A4984] bg-[url('./images/background.png')] bg-cover bg-no-repeat h-[80vh]"
         ></div>
 
-        <section class="bg-[#5A4984] px-6 py-10">
+        <section id="AboutUs" class="bg-[#5A4984] px-6 py-10">
             <h1 class="text-white text-5xl font-bold text-center mb-8">
                 About CyberSec 25
             </h1>
-            <div class="flex flex-col md:flex-row">
+
+            <div class="flex flex-col md:flex-row gap-4 py-8">
                 <div class="basis-1/2 flex items-center">
-                    <p class="max-w-md text-white font-normal text-lg p-4">
+                    <p class="max-w-md text-white font-normal text-lg">
                         The third cybersecurity conference organized by the
                         cybersecurity Master's students will be taking place on
                         January 2023. For the first time this conference will be
@@ -86,7 +108,7 @@
                         Conference registration is free but mandatory to attend.
                     </p>
                 </div>
-                <div class="basis-1/2 p-2">
+                <div class="basis-1/2">
                     <div class="text-white py-4">
                         <h3 class="font-bold text-3xl">Conference Date</h3>
                         <span class="font-normal"
@@ -145,7 +167,237 @@
                     </div>
                 </div>
             </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-white"
+            >
+                <div class="bg-[#4F3A83] p-4">
+                    <img
+                        class="rounded-full h-16 w-16 mb-2"
+                        src="./images/logo_white.png"
+                        alt="Aria"
+                    />
+                    <span class="font-semibold mt-2 mb-4"
+                        >Networking Security</span
+                    >
+                    <p class="mt-4">
+                        The conference will have a networking session where
+                        students can meet and discuss the latest cybersecurity
+                        trends and emerging threats.
+                    </p>
+                </div>
+                <div class="bg-[#4F3A83] p-4">
+                    <img
+                        class="rounded-full h-16 w-16 mb-2"
+                        src="./images/logo_white.png"
+                        alt="Aria"
+                    />
+                    <span class="font-semibold mt-2 mb-4">Cloud Security</span>
+                    <p class="mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Modi ex voluptatum accusantium ducimus officiis porro ut
+                        tempora saepe illo adipisci quo, laboriosam libero earum
+                        sequi a mollitia reprehenderit, debitis maxime!
+                    </p>
+                </div>
+                <div class="bg-[#4F3A83] p-4">
+                    <img
+                        class="rounded-full h-16 w-16 mb-2"
+                        src="./images/logo_white.png"
+                        alt="Aria"
+                    />
+                    <span class="font-semibold mt-2 mb-4"
+                        >Privacy and Data Protection</span
+                    >
+                    <p class="mt-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Id dolor quo, delectus voluptatum iure recusandae
+                        nisi ex minus porro? Atque repudiandae sint
+                        necessitatibus eveniet sit error molestiae earum et
+                        excepturi.
+                    </p>
+                </div>
+                <div class="bg-[#4F3A83] p-4">
+                    <img
+                        class="rounded-full h-16 w-16 mb-2"
+                        src="./images/logo_white.png"
+                        alt="Aria"
+                    />
+                    <span class="font-semibold mt-2 mb-4"
+                        >Vulnerability Research and Exploitation</span
+                    >
+                    <p class="mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet iusto harum tempora debitis mollitia nesciunt
+                        reprehenderit dolore, nemo officiis a recusandae quasi
+                        nulla, exercitationem laboriosam illum similique! Hic,
+                        nihil quod!
+                    </p>
+                </div>
+                <div class="bg-[#4F3A83] p-4">
+                    <img
+                        class="rounded-full h-16 w-16 mb-2"
+                        src="./images/logo_white.png"
+                        alt="Aria"
+                    />
+                    <span class="font-semibold mt-2 mb-4">Phishing</span>
+                    <p class="mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nam enim at architecto pariatur obcaecati ab voluptate
+                        accusantium sint veritatis ex animi sit voluptatibus
+                        repellat quam esse voluptas illum, a quas.
+                    </p>
+                </div>
+            </div>
         </section>
+
+        <section id="Schedule" class="bg-[#BBE3DB] px-6 py-10">
+            <h1 class="text-[#5A4984] text-5xl font-bold text-center mb-8">
+                Schedule
+            </h1>
+
+            <div>
+                <div class="flex flex-col gap-8 text-white">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="bg-[#4F3A83] p-4">
+                            <span>Authored by:</span>
+                            <img
+                                class="rounded-full h-16 w-16 mt-2 mb-4"
+                                src="./images/logo_white.png"
+                                alt="Aria"
+                            />
+                            <span class="font-semibold text-2xl">
+                                Luís Lima
+                            </span>
+                            <p class="mt-4">
+                                Francisco Guimarães, Pedro Coutinho
+                            </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 py-8 md:col-span-2">
+                            <span class="font-semibold text-2xl">
+                                Cybersecurity in the Financial Sector:
+                                Challenges and Solutions
+                            </span>
+                            <p class="mt-4">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Delectus quidem repudiandae
+                                optio blanditiis quis fugiat animi, veniam
+                                adipisci consequuntur minima quam sed magnam
+                                fugit ullam nesciunt atque quibusdam esse quae.
+                            </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4">
+                            <span class="font-normal text-2xl">
+                                17:30 - 17:45
+                            </span>
+                            <p class="mt-10 font-semibold text-2xl">
+                                Any cutting-edge research in the field of
+                                cybersecurity
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="bg-[#4F3A83] p-4">
+                            <span>Authored by:</span>
+                            <img
+                                class="rounded-full h-16 w-16 mt-2 mb-4"
+                                src="./images/logo_white.png"
+                                alt="Aria"
+                            />
+                            <span class="font-semibold text-2xl">
+                                Luís Lima
+                            </span>
+                            <p class="mt-4">
+                                Francisco Guimarães, Pedro Coutinho
+                            </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 py-8 md:col-span-2">
+                            <span class="font-semibold text-2xl">
+                                Cybersecurity in the Financial Sector:
+                                Challenges and Solutions
+                            </span>
+                            <p class="mt-4">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Delectus quidem repudiandae
+                                optio blanditiis quis fugiat animi, veniam
+                                adipisci consequuntur minima quam sed magnam
+                                fugit ullam nesciunt atque quibusdam esse quae.
+                            </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4">
+                            <span class="font-normal text-2xl">
+                                17:30 - 17:45
+                            </span>
+                            <p class="mt-10 font-semibold text-2xl">
+                                Any cutting-edge research in the field of
+                                cybersecurity
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="bg-[#4F3A83] p-4">
+                            <span>Authored by:</span>
+                            <img
+                                class="rounded-full h-16 w-16 mt-2 mb-4"
+                                src="./images/logo_white.png"
+                                alt="Aria"
+                            />
+                            <span class="font-semibold text-2xl">
+                                Luís Lima
+                            </span>
+                            <p class="mt-4">
+                                Francisco Guimarães, Pedro Coutinho
+                            </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 py-8 md:col-span-2">
+                            <span class="font-semibold text-2xl">
+                                Cybersecurity in the Financial Sector:
+                                Challenges and Solutions
+                            </span>
+                            <p class="mt-4">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Delectus quidem repudiandae
+                                optio blanditiis quis fugiat animi, veniam
+                                adipisci consequuntur minima quam sed magnam
+                                fugit ullam nesciunt atque quibusdam esse quae.
+                            </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4">
+                            <span class="font-normal text-2xl">
+                                17:30 - 17:45
+                            </span>
+                            <p class="mt-10 font-semibold text-2xl">
+                                Any cutting-edge research in the field of
+                                cybersecurity
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Sponsors" class="bg-[#5A4984] py-10">
+            <h1 class="text-white text-3xl font-bold text-center mb-8">
+                Sponsors
+            </h1>
+
+
+            <!-- <div class="flex items-center justify-center min-w-screen"> -->
+            <div
+                class="overflow-hidden whitespace-nowrap w-full flex justify-center text-white text-6xl font-bold"
+            >
+                <span class="mx-8">Sonhe</span> •
+                <span class="mx-8">Crie</span> •
+                <span class="mx-8">Faça crescer</span>
+            </div>
+            <!-- </div> -->
+        </section>
+
+        <footer class="bg-[#BBE3DB] px-6 py-10 text-white text-center">
+            ols
+        </footer>
 
         <script>
             const navLink = document.querySelector(".nav-links");

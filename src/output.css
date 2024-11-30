@@ -687,6 +687,10 @@ video {
   isolation: auto;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -731,6 +735,26 @@ video {
   clear: none;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -749,6 +773,26 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .box-border {
@@ -854,6 +898,10 @@ video {
   height: 80vh;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
@@ -864,6 +912,10 @@ video {
 
 .min-h-\[250px\] {
   min-height: 250px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-\[this-is\\\\\] {
@@ -898,12 +950,20 @@ video {
   width: 8rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .max-w-80 {
   max-width: 20rem;
 }
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink {
@@ -1264,6 +1324,14 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1454,6 +1522,14 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1928,6 +2004,21 @@ video {
   background-color: rgb(90 73 132 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#4F3A83\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 58 131 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#BBE3DB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 227 219 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
   background-image: url('/img/hero-pattern.svg');
 }
@@ -2245,6 +2336,11 @@ video {
   line-height: 1;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2259,6 +2355,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .uppercase {
@@ -2346,6 +2446,11 @@ video {
 .text-\[\#18CE9F\] {
   --tw-text-opacity: 1;
   color: rgb(24 206 159 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#5A4984\] {
+  --tw-text-opacity: 1;
+  color: rgb(90 73 132 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -2797,6 +2902,10 @@ video {
     position: static;
   }
 
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -2810,12 +2919,32 @@ video {
     width: auto;
   }
 
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 
   .md\:gap-\[4vw\] {
@@ -2831,10 +2960,39 @@ video {
   }
 }
 
+@media (min-width: 1024px) {
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   @media (min-width: 1024px) {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
       paint-order: markers;
     }
   }
+}
+
+.\[\&_img\]\:max-w-none img {
+  max-width: none;
+}
+
+.\[\&_li\]\:mx-8 li {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.\[\&_span\]\:max-w-none span {
+  max-width: none;
 }
