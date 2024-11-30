@@ -834,6 +834,10 @@ video {
   display: none;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
@@ -1880,6 +1884,22 @@ video {
   background-color: rgb(90 73 132 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
+  background-image: url('/img/hero-pattern.svg');
+}
+
+.bg-\[url\(\'\/images\/backgound\.png\'\)\] {
+  background-image: url('/images/backgound.png');
+}
+
+.bg-\[url\(\'\.\/images\/backgound\.png\'\)\] {
+  background-image: url('./images/backgound.png');
+}
+
+.bg-\[url\(\'\.\/images\/background\.png\'\)\] {
+  background-image: url('./images/background.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1898,6 +1918,18 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-auto {
+  background-size: auto;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-fixed {
