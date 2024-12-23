@@ -39,14 +39,14 @@
         </style>
     </head>
     <body>
-        <header class="bg-[#5A4984] p-7">
+        <header class="bg-[#5A4984] p-10">
             <nav class="flex justify-between items-center w-[100%]">
                 <div>
-                    <img class="w-32" src="./images/light.png" alt="Logo" />
+                    <img class="w-28" src="./images/light.png" alt="Logo" />
                 </div>
 
                 <div
-                    class="nav-links bg-[#5A4984] duration-500 md:static absolute md:min-h-fit min-h-[250px] left-0 top-[-100%] md:w-auto w-full flex items-center justify-center px-5"
+                    class="nav-links bg-[#5A4984] duration-500 md:static absolute md:min-h-fit min-h-[250px] left-0 top-[-100%] md:w-auto w-full flex items-center justify-center"
                 >
                     <ul
                         class="flex md:flex-row flex-col md:items-center md:gap-8 gap-8 text-white font-medium"
@@ -56,16 +56,11 @@
                                 About Us
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="hover:text-[#18CE9F]" href="#Schedule">
                                 Schedule
                             </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#18CE9F]" href="#Schedule">
-                                Speakers
-                            </a>
-                        </li>
+                        </li> -->
                         <li>
                             <a class="hover:text-[#18CE9F]" href="#Sponsors">
                                 Sponsors
@@ -73,204 +68,145 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="flex items-center gap-6">
-                    <a
-                        href="#"
-                        target="_blank"
-                        class="border-2 border-[#18CE9F] rounded-full py-3 px-8 text-[#18CE9F]"
-                        >Join Now</a
-                    >
-
-                    <ion-icon
-                        name="menu"
-                        onclick="onToggleMenu(this)"
-                        class="text-2xl cursor-pointer md:hidden text-white"
-                    ></ion-icon>
-                </div>
             </nav>
         </header>
 
-        <div
-            class="bg-[#5A4984] bg-[url('./images/background.png')] bg-cover bg-no-repeat h-[80vh]"
-        ></div>
+        <div class="bg-[url('./images/background.png')] bg-cover flex flex-col md:flex-row items-center px-14 py-12 lg:py-0">
+            <div class="basis-1/2 drop-shadow-lg max-w-40 md:max-w-full"><img src="./images/hero.png"/></div>
+            <div class="text-white font-manrope basis-1/2">
+                <span class="text-[#5A4984] lg:text-2xl font-bold">7th February 2025</span>
+                <h1 class="text-2xl md:text-5xl lg:text-9xl font-poppins font-bold py-2 md:py-4 drop-shadow-lg">
+                    CiberSec 2025
+                </h1>
+                <p class="text-base lg:text-lg">
+                    Mark your calendars for February 2025 as we proudly present the <span class="text-[#5A4984]">5th edition</span> of the CyberSec Conference!<br>Join us for insightful discussions on the latest trends, emerging threats, and advancements in cybersecurity.<br><br>Attendance is free but registration is required. Stay tuned for more details and secure your spot at this unmissable event!</p>
+            </div>
+        </div>
 
         <section id="AboutUs" class="bg-[#5A4984] px-6 py-10">
             <h1
-                class="text-white text-5xl font-bold text-center font-poppins mb-8"
+                class="text-white text-3xl font-medium text-center font-poppins mb-4"
             >
-                About CyberSec 25
+                About CyberSec 25' Conference
             </h1>
 
-            <div class="flex flex-col md:flex-row gap-4 py-8">
-                <div class="basis-1/2 flex items-center">
-                    <p class="max-w-md text-white font-manrope text-lg">
-                        The third cybersecurity conference organized by the
-                        cybersecurity Master's students will be taking place on
-                        January 2023. For the first time this conference will be
-                        presential and will took place in the Escola Superior de
-                        Tecnologia e Gestão main auditorium. This event will
-                        connect anyone with a particular interest in
-                        cybersecurity with the students and the expert faculty.
-                        The latest cybersecurity trends and the emerging threats
-                        will be discussed along with the presentations.
-                        Conference registration is free but mandatory to attend.
-                    </p>
-                </div>
-                <div class="basis-1/2">
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="basis-1/2 text-center md:text-right md:border-r md:border-white pr-4">
                     <div class="text-white py-4">
-                        <h3 class="font-bold text-3xl font-poppins">
-                            Conference Date
-                        </h3>
-                        <span class="font-manrope"
-                            >7th February 2025 - 17H00</span
-                        >
-                    </div>
-
-                    <div class="text-white py-4">
-                        <h3 class="font-bold text-3xl font-poppins">
-                            Late Registration
-                        </h3>
-                        <span class="font-manrope">24th January 2025</span>
-                    </div>
-
-                    <div class="text-white py-4">
-                        <h3 class="font-bold text-3xl font-poppins">
-                            Paper Submission Deadline
-                        </h3>
-                        <span class="font-manrope">03rd January 2025</span>
-                    </div>
-
-                    <div class="text-white py-4">
-                        <h3 class="font-bold text-3xl font-poppins">
-                            Paper Notification Due
-                        </h3>
-                        <span class="font-manrope">17th January 2025</span>
-                    </div>
-
-                    <div class="text-white py-4">
-                        <h3 class="font-bold text-3xl font-poppins">
-                            Paper Final Version Submission
-                        </h3>
-                        <span class="font-manrope">31st January 2025</span>
-                    </div>
-
-                    <div class="text-white py-4">
-                        <h3 class="font-bold text-3xl mb-5 font-poppins">
+                        <h3 class="text-lg md:text-2xl mb-5 font-poppins">
                             Submission Template
                         </h3>
                         <a
                             href="#"
                             target="_blank"
-                            class="border-2 border-[#18CE9F] rounded-full py-2 px-14 text-[#18CE9F] font-manrope"
+                            class="border-2 border-[#18CE9F] rounded-full py-1 px-4 md:px-14 text-[#18CE9F] font-manrope hover:bg-[#18CE9F] hover:text-white"
                         >
                             Get Template
                         </a>
                     </div>
 
                     <div class="text-white py-4">
-                        <h3 class="font-bold text-3xl mb-5 font-poppins">
+                        <h3 class="text-lg md:text-2xl mb-5 font-poppins">
                             Call for Paper
                         </h3>
                         <a
-                            href="#"
+                            href=""
                             target="_blank"
-                            class="border-2 border-[#18CE9F] rounded-full py-2 px-14 text-[#18CE9F] font-manrope"
+                            class="border-2 border-[#18CE9F] rounded-full py-1 px-4 md:px-14 text-[#18CE9F] font-manrope hover:bg-[#18CE9F] hover:text-white"
                         >
                             Submit Paper
                         </a>
                     </div>
+
+                    <div class="text-white py-4">
+                        <h3 class="text-lg md:text-2xl mb-5 font-poppins">
+                            Attendee Registration
+                        </h3>
+                        <a
+                            href="https://forms.gle/Lhs84L3BQzKuHmRf9"
+                            target="_blank"
+                            class="border-2 border-[#18CE9F] rounded-full py-1 px-4 md:px-14 text-[#18CE9F] font-manrope hover:bg-[#18CE9F] hover:text-white"
+                        >
+                            Go to Forms
+                        </a>
+                    </div>
+                </div>
+                <div class="basis-1/2 text-center md:text-left">
+                    <div class="text-white py-4">
+                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                            Conference Date
+                        </h3>
+                        <span class="font-manrope"
+                            >7th February 2025 - 17H00</span
+                        >
+                    </div>
+                    <div class="text-white py-4">
+                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                            Paper Submission Deadline
+                        </h3>
+                        <span class="font-manrope">03rd January 2025</span>
+                    </div>
+
+                    <div class="text-white py-4">
+                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                            Paper Notification Due
+                        </h3>
+                        <span class="font-manrope">17th January 2025</span>
+                    </div>
+
+                    <div class="text-white py-4">
+                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                            Paper Final Version Submission
+                        </h3>
+                        <span class="font-manrope">31st January 2025</span>
+                    </div>
+
+                    <div class="text-white py-4">
+                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                            Deadline for attendee registration
+                        </h3>
+                        <span class="font-manrope">24th January 2025</span>
+                    </div>
                 </div>
             </div>
-
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-white"
+        </section>
+        <section class="bg-[#5A4984] px-6 pb-16">
+            <h1
+                class="text-white text-3xl font-medium text-center font-poppins mb-8"
             >
-                <div class="bg-[#4F3A83] p-4">
-                    <img
-                        class="rounded-full h-16 w-16 mb-2"
-                        src="./images/logo_white.png"
-                        alt="Aria"
-                    />
-                    <span class="font-poppins font-semibold mt-2 mb-4"
-                        >Networking Security</span
-                    >
-                    <p class="mt-4 font-manrope">
-                        The conference will have a networking session where
-                        students can meet and discuss the latest cybersecurity
-                        trends and emerging threats.
-                    </p>
+                Themes
+            </h1>
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-white"
+            >
+                <div class="bg-[#BBE3DB] p-4 drop-shadow-lg">
+                    <span class="font-poppins font-semibold mt-2 mb-4 text-[#4F3A83]">Cybersecurity applied to IoT</span>
                 </div>
-                <div class="bg-[#4F3A83] p-4">
-                    <img
-                        class="rounded-full h-16 w-16 mb-2"
-                        src="./images/logo_white.png"
-                        alt="Aria"
-                    />
-                    <span class="font-poppins font-semibold mt-2 mb-4"
-                        >Cloud Security</span
-                    >
-                    <p class="mt-4 font-manrope">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Modi ex voluptatum accusantium ducimus officiis porro ut
-                        tempora saepe illo adipisci quo, laboriosam libero earum
-                        sequi a mollitia reprehenderit, debitis maxime!
-                    </p>
+                <div class="bg-[#4F3A83] p-4 drop-shadow-lg">
+                    <span class="font-poppins font-semibold mt-2 mb-4">AI and Cybersecurity</span>
                 </div>
-                <div class="bg-[#4F3A83] p-4">
-                    <img
-                        class="rounded-full h-16 w-16 mb-2"
-                        src="./images/logo_white.png"
-                        alt="Aria"
-                    />
-                    <span class="font-poppins font-semibold mt-2 mb-4"
-                        >Privacy and Data Protection</span
-                    >
-                    <p class="mt-4 font-manrope">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Id dolor quo, delectus voluptatum iure recusandae
-                        nisi ex minus porro? Atque repudiandae sint
-                        necessitatibus eveniet sit error molestiae earum et
-                        excepturi.
-                    </p>
+                <div class="bg-[#BBE3DB] p-4 drop-shadow-lg">
+                    <span class="font-poppins font-semibold mt-2 mb-4 text-[#4F3A83]">Privacy and Data Protection</span>
                 </div>
-                <div class="bg-[#4F3A83] p-4">
-                    <img
-                        class="rounded-full h-16 w-16 mb-2"
-                        src="./images/logo_white.png"
-                        alt="Aria"
-                    />
-                    <span class="font-poppins font-semibold mt-2 mb-4"
-                        >Vulnerability Research and Exploitation</span
-                    >
-                    <p class="mt-4 font-manrope">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Amet iusto harum tempora debitis mollitia nesciunt
-                        reprehenderit dolore, nemo officiis a recusandae quasi
-                        nulla, exercitationem laboriosam illum similique! Hic,
-                        nihil quod!
-                    </p>
+                <div class="bg-[#4F3A83] p-4 drop-shadow-lg">
+                    <span class="font-poppins font-semibold mt-2 mb-4">Social Engineering</span>
                 </div>
-                <div class="bg-[#4F3A83] p-4">
-                    <img
-                        class="rounded-full h-16 w-16 mb-2"
-                        src="./images/logo_white.png"
-                        alt="Aria"
-                    />
-                    <span class="font-poppins font-semibold mt-2 mb-4"
-                        >Phishing</span
-                    >
-                    <p class="mt-4 font-manrope">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nam enim at architecto pariatur obcaecati ab voluptate
-                        accusantium sint veritatis ex animi sit voluptatibus
-                        repellat quam esse voluptas illum, a quas.
-                    </p>
+                <div class="bg-[#BBE3DB] lg:bg-[#4F3A83] p-4 drop-shadow-lg">
+                    <span class="font-poppins font-semibold mt-2 mb-4 text-[#4F3A83] lg:text-white">Cloud Security</span>
+                </div>
+                <div class="bg-[#4F3A83] lg:bg-[#BBE3DB] p-4 drop-shadow-lg">
+                    <span class="font-poppins font-semibold mt-2 mb-4 text-white lg:text-[#4F3A83]">Forensics</span>
+                </div>
+                <div class="bg-[#BBE3DB] lg:bg-[#4F3A83] p-4 drop-shadow-lg">
+                    <span class="font-poppins font-semibold mt-2 mb-4 text-[#4F3A83] lg:text-white">Cryptography</span>
+                </div>
+                <div class="bg-[#4F3A83] lg:bg-[#BBE3DB] p-4 drop-shadow-lg">
+                    <span class="font-poppins font-semibold mt-2 mb-4 text-white lg:text-[#4F3A83]">Any cutting-edge research in the field of cybersecurity</span>
                 </div>
             </div>
         </section>
 
-        <section id="Schedule" class="bg-[#BBE3DB] px-6 py-16">
+        <!-- <section id="Schedule" class="bg-[#BBE3DB] px-6 py-10">
             <h1
                 class="text-[#5A4984] text-5xl font-medium text-center font-poppins mb-8"
             >
@@ -403,7 +339,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="Sponsors" class="bg-[#5A4984] py-16">
             <h1
@@ -414,61 +350,80 @@
 
             <!-- <div class="flex items-center justify-center min-w-screen"> -->
             <div
-                class="overflow-hidden whitespace-nowrap w-full flex justify-center text-white text-6xl font-bold font-poppins scrolling-text"
+                class="overflow-hidden whitespace-nowrap w-full flex justify-center text-white text-6xl font-bold font-poppins"
             >
-                <span class="mx-8">Sonhe</span> •
-                <span class="mx-8">Crie</span> •
-                <span class="mx-8">Faça crescer</span>
+                <span class="mx-8 h-24 w-24"><img src="images/DK_logo.png"/></span>
             </div>
             <!-- </div> -->
         </section>
 
         <footer
-            class="bg-[#BBE3DB] px-6 py-16 text-[#5A4984] grid grid-cols-1 md:grid-cols-3 gap-8"
+            class="bg-[#BBE3DB] px-6 py-16 text-[#5A4984] flex flex-col gap-8"
         >
             <div>
                 <span class="text-5xl font-poppins">CyberSec25</span>
             </div>
 
-            <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="gap-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6">
                 <div>
-                    <span class="text-3xl font-medium font-poppins"
-                        >General Chairs</span
+                    <span class="text-2xl font-medium font-poppins"
+                        >General Chair</span
                     >
-                    <ul class="list-disc pl-9 mt-5">
-                        <li class="text-left mb-2">LOREN</li>
-                        <li class="text-left mb-2">LOREN</li>
-                        <li class="text-left mb-2">LOREN</li>
+                    <ul class=" pl-9 mt-5">
+                        <li class="text-left mb-2">Aurora Vasconcelos</li>
                     </ul>
                 </div>
                 <div>
                     <span class="text-2xl font-medium font-poppins"
                         >Co-Chairs</span
                     >
-                    <ul class="list-disc pl-9 mt-5">
-                        <li class="text-left mb-2">LOREN</li>
-                        <li class="text-left mb-2">LOREN</li>
-                        <li class="text-left mb-2">LOREN</li>
+                    <ul class=" pl-9 mt-5">
+                        <li class="text-left mb-2">Francisco Ferreira</li>
+                        <li class="text-left mb-2">João Rosa</li>
+                        <li class="text-left mb-2">Pedro Ferraz</li>
                     </ul>
                 </div>
                 <div>
                     <span class="text-2xl font-medium font-poppins">
-                        Publicity Chairs
+                        Program Chair
                     </span>
-                    <ul class="list-disc pl-9 mt-5">
-                        <li class="text-left mb-2">LOREN</li>
-                        <li class="text-left mb-2">LOREN</li>
-                        <li class="text-left mb-2">LOREN</li>
+                    <ul class=" pl-9 mt-5">
+                        <li class="text-left mb-2">Francisco Ferreira</li>
+                        <li class="text-left mb-2">José Dias</li>
+                        <li class="text-left mb-2">Braga Lima</li>
+                        <li class="text-left mb-2">Pedro Ferraz</li>
                     </ul>
                 </div>
                 <div>
                     <span class="text-2xl font-medium font-poppins"
-                        >Technical Chairs</span
+                        >Publication Chair</span
                     >
-                    <ul class="list-disc pl-9 mt-5">
-                        <li class="text-left mb-2">LOREN</li>
-                        <li class="text-left mb-2">LOREN</li>
-                        <li class="text-left mb-2">LOREN</li>
+                    <ul class=" pl-9 mt-5">
+                        <li class="text-left mb-2">José Machado</li>
+                        <li class="text-left mb-2">Gonçalo Lima</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="text-2xl font-medium font-poppins"
+                        >Marketing Chair</span
+                    >
+                    <ul class=" pl-9 mt-5">
+                        <li class="text-left mb-2">Hugo Costa</li>
+                        <li class="text-left mb-2">Marco Moreira</li>
+                        <li class="text-left mb-2">Danilo Oliveira</li>
+                        <li class="text-left mb-2">Elton Moreno</li>
+                        <li class="text-left mb-2">Rimsha Riaz</li>
+                        <li class="text-left mb-2">João Marques</li>
+                        <li class="text-left mb-2">André Alves</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="text-2xl font-medium font-poppins"
+                        >Local Chair</span
+                    >
+                    <ul class=" pl-9 mt-5">
+                        <li class="text-left mb-2">Diego Alvarez</li>
+                        <li class="text-left mb-2">Joel Alves</li>
                     </ul>
                 </div>
             </div>
