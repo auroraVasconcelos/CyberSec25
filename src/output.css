@@ -2033,8 +2033,42 @@ video {
   background-color: rgb(37 16 43 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#131025\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 16 37 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#121025\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 16 37 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#63255c\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 37 92 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#6c346c\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(108 52 108 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[url\(\'\.\/images\/background\.png\'\)\] {
   background-image: url('./images/background.png');
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.from-\[\#121025\] {
+  --tw-gradient-from: #121025 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(18 16 37 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-\[\#b53389\] {
+  --tw-gradient-to: #b53389 var(--tw-gradient-to-position);
 }
 
 .decoration-slice {
@@ -2059,6 +2093,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-fixed {
@@ -2088,6 +2126,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-repeat {
