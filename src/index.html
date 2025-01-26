@@ -6,15 +6,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=manrope:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
             rel="stylesheet"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=manrope:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
             rel="stylesheet"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
         <link href="./output.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/d4d9fc241e.js" crossorigin="anonymous"></script>
         <title>CyberSec 2025</title>
         <style>
             /* Add your CSS styles here */
@@ -39,61 +41,63 @@
         </style>
     </head>
     <body>
-        <header class="bg-[#5A4984] p-10">
-            <nav class="flex justify-between items-center w-[100%]">
-                <div>
-                    <img class="w-28" src="./images/light.png" alt="Logo" />
-                </div>
+        <section class="bg-[url('./images/background.png')] bg-cover ">
+            <header class="p-10">
+                <nav class="flex justify-between items-center w-[100%]">
+                    <div>
+                        <img class="w-28" src="./images/logo.png" alt="Logo" />
+                    </div>
 
-                <div
-                    class="nav-links bg-[#5A4984] duration-500 md:static absolute md:min-h-fit min-h-[250px] left-0 top-[-100%] md:w-auto w-full flex items-center justify-center"
-                >
-                    <ul
-                        class="flex md:flex-row flex-col md:items-center md:gap-8 gap-8 text-white font-medium"
+                    <div
+                        class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[250px] left-0 top-[-100%] md:w-auto w-full flex items-center justify-center"
                     >
-                        <li>
-                            <a class="hover:text-[#18CE9F]" href="#AboutUs">
-                                About Us
-                            </a>
-                        </li>
-                        <!-- <li>
-                            <a class="hover:text-[#18CE9F]" href="#Schedule">
-                                Schedule
-                            </a>
-                        </li> -->
-                        <li>
-                            <a class="hover:text-[#18CE9F]" href="#Sponsors">
-                                Sponsors
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                        <ul
+                            class="flex md:flex-row flex-col md:items-center md:gap-8 gap-8 text-white font-medium"
+                        >
+                            <li>
+                                <a class="hover:text-[#18CE9F]" href="#AboutUs">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#18CE9F]" href="#Schedule">
+                                    Schedule
+                                </a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#18CE9F]" href="#Sponsors">
+                                    Sponsors
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
 
-        <div class="bg-[url('./images/background.png')] bg-cover flex flex-col md:flex-row items-center px-14 py-12 lg:py-0">
-            <div class="basis-1/2 drop-shadow-lg max-w-40 md:max-w-full"><img src="./images/hero.png"/></div>
-            <div class="text-white font-manrope basis-1/2">
-                <span class="text-[#5A4984] lg:text-2xl font-bold">7th February 2025</span>
-                <h1 class="text-2xl md:text-5xl lg:text-9xl font-poppins font-bold py-2 md:py-4 drop-shadow-lg">
-                    CiberSec 2025
+            <div class="items-center px-14 py-12 lg:pb-14 lg:pt-0">
+                <h1 class="text-2xl md:text-5xl lg:text-9xl text-white font-onabort py-2 md:py-4 drop-shadow-lg text-center">
+                    Cybersec '25
                 </h1>
-                <p class="text-base lg:text-lg">
-                    Mark your calendars for February 2025 as we proudly present the <span class="text-[#5A4984]">5th edition</span> of the CyberSec Conference!<br>Join us for insightful discussions on the latest trends, emerging threats, and advancements in cybersecurity.<br><br>Attendance is free but registration is required. Stay tuned for more details and secure your spot at this unmissable event!</p>
+                <div class="flex flex-col md:grid md:grid-cols-3 text-white font-manrope">
+                    <p class="text-base lg:text-lg col-span-2 content-center">
+                        Mark your calendars for the <span class="text-[#18CE9F] font-bold">7th of February 2025</span> as we proudly present the 5th edition of the CyberSec Conference!<br>Join us for insightful discussions on the latest trends, emerging threats, and advancements in cybersecurity.<br><br>Attendance is free but registration is required. Stay tuned for more details and secure your spot at this unmissable event!
+                    </p>
+                    <div class="drop-shadow-lg flex justify-center"><img class="max-w-32 md:max-w-72 " src="./images/hero.png"/></div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <section id="AboutUs" class="bg-[#5A4984] px-6 py-10">
-            <h1
-                class="text-white text-3xl font-medium text-center font-poppins mb-4"
+        <section id="AboutUs" class="bg-[#25102b] px-6 py-10">
+            <h2
+                class="text-white text-3xl font-medium text-center font-manrope mb-4"
             >
                 About CyberSec 25' Conference
-            </h1>
+            </h2>
 
             <div class="flex flex-col md:flex-row gap-4">
                 <div class="basis-1/2 text-center md:text-right md:border-r md:border-white pr-4">
                     <div class="text-white py-4">
-                        <h3 class="text-lg md:text-2xl mb-5 font-poppins">
+                        <h3 class="text-lg md:text-2xl mb-5 font-manrope">
                             Submission Template
                         </h3>
                         <a
@@ -106,7 +110,7 @@
                     </div>
 
                     <div class="text-white py-4">
-                        <h3 class="text-lg md:text-2xl mb-5 font-poppins">
+                        <h3 class="text-lg md:text-2xl mb-5 font-manrope">
                             Call for Paper
                         </h3>
                         <a
@@ -119,7 +123,7 @@
                     </div>
 
                     <div class="text-white py-4">
-                        <h3 class="text-lg md:text-2xl mb-5 font-poppins">
+                        <h3 class="text-lg md:text-2xl mb-5 font-manrope">
                             Attendee Registration
                         </h3>
                         <a
@@ -133,7 +137,7 @@
                 </div>
                 <div class="basis-1/2 text-center md:text-left">
                     <div class="text-white py-4">
-                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                        <h3 class="text-lg md:text-2xl font-manrope mb-2">
                             Conference Date
                         </h3>
                         <span class="font-manrope"
@@ -141,28 +145,28 @@
                         >
                     </div>
                     <div class="text-white py-4">
-                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                        <h3 class="text-lg md:text-2xl font-manrope mb-2">
                             Paper Submission Deadline
                         </h3>
                         <span class="font-manrope">03rd January 2025</span>
                     </div>
 
                     <div class="text-white py-4">
-                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                        <h3 class="text-lg md:text-2xl font-manrope mb-2">
                             Paper Notification Due
                         </h3>
                         <span class="font-manrope">17th January 2025</span>
                     </div>
 
                     <div class="text-white py-4">
-                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                        <h3 class="text-lg md:text-2xl font-manrope mb-2">
                             Paper Final Version Submission
                         </h3>
                         <span class="font-manrope">31st January 2025</span>
                     </div>
 
                     <div class="text-white py-4">
-                        <h3 class="text-lg md:text-2xl font-poppins mb-2">
+                        <h3 class="text-lg md:text-2xl font-manrope mb-2">
                             Deadline for attendee registration
                         </h3>
                         <span class="font-manrope">24th January 2025</span>
@@ -170,189 +174,412 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[#5A4984] px-6 pb-16">
-            <h1
-                class="text-white text-3xl font-medium text-center font-poppins mb-8"
+
+        <section class="bg-[#25102b] px-6 pb-10">
+            <h2
+                class="text-white text-3xl font-medium text-center font-manrope mb-8"
             >
                 Themes
-            </h1>
+            </h2>
             <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-white"
             >
-                <div class="bg-[#BBE3DB] p-4 drop-shadow-lg">
-                    <span class="font-poppins font-semibold mt-2 mb-4 text-[#4F3A83]">Cybersecurity applied to IoT</span>
-                </div>
                 <div class="bg-[#4F3A83] p-4 drop-shadow-lg">
-                    <span class="font-poppins font-semibold mt-2 mb-4">AI and Cybersecurity</span>
+                    <span class="font-manrope font-semibold mt-2 mb-4">Cybersecurity and Auditing</span>
                 </div>
                 <div class="bg-[#BBE3DB] p-4 drop-shadow-lg">
-                    <span class="font-poppins font-semibold mt-2 mb-4 text-[#4F3A83]">Privacy and Data Protection</span>
+                    <span class="font-manrope font-semibold mt-2 mb-4 text-[#4F3A83]">Cryptography</span>
                 </div>
                 <div class="bg-[#4F3A83] p-4 drop-shadow-lg">
-                    <span class="font-poppins font-semibold mt-2 mb-4">Social Engineering</span>
+                    <span class="font-manrope font-semibold mt-2 mb-4">Attacks and Detection</span>
                 </div>
-                <div class="bg-[#BBE3DB] lg:bg-[#4F3A83] p-4 drop-shadow-lg">
-                    <span class="font-poppins font-semibold mt-2 mb-4 text-[#4F3A83] lg:text-white">Cloud Security</span>
+                <div class="bg-[#BBE3DB] p-4 drop-shadow-lg">
+                    <span class="font-manrope font-semibold mt-2 mb-4 text-[#4F3A83]">Phishing and Social Engineering</span>
                 </div>
-                <div class="bg-[#4F3A83] lg:bg-[#BBE3DB] p-4 drop-shadow-lg">
-                    <span class="font-poppins font-semibold mt-2 mb-4 text-white lg:text-[#4F3A83]">Forensics</span>
+                <div class="bg-[#4F3A83] p-4 drop-shadow-lg">
+                    <span class="font-manrope font-semibold mt-2 mb-4 text-white">Artificial Intelligence and Cybersecurity</span>
                 </div>
-                <div class="bg-[#BBE3DB] lg:bg-[#4F3A83] p-4 drop-shadow-lg">
-                    <span class="font-poppins font-semibold mt-2 mb-4 text-[#4F3A83] lg:text-white">Cryptography</span>
+                <div class="bg-[#BBE3DB] p-4 drop-shadow-lg">
+                    <span class="font-manrope font-semibold mt-2 mb-4 text-[#4F3A83]">Emerging Technologies and Infrastructures</span>
                 </div>
-                <div class="bg-[#4F3A83] lg:bg-[#BBE3DB] p-4 drop-shadow-lg">
-                    <span class="font-poppins font-semibold mt-2 mb-4 text-white lg:text-[#4F3A83]">Any cutting-edge research in the field of cybersecurity</span>
+                <div class="bg-[#4F3A83] p-4 drop-shadow-lg">
+                    <span class="font-manrope font-semibold mt-2 mb-4 text-white">Any cutting-edge research in the field of cybersecurity</span>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="Schedule" class="bg-[#BBE3DB] px-6 py-10">
-            <h1
-                class="text-[#5A4984] text-5xl font-medium text-center font-poppins mb-8"
-            >
-                Schedule
-            </h1>
-
+        <section id="Schedule" class="bg-[#25102b] px-24 pb-10">
+        <h2 class="text-white text-3xl font-medium text-center font-manrope mb-2">
+            Schedule
+        </h2>
             <div>
-                <div class="flex flex-col gap-8 text-white">
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div class="bg-[#4F3A83] p-4">
-                            <span>Authored by:</span>
-                            <img
-                                class="rounded-full h-16 w-16 mt-2 mb-4"
-                                src="./images/logo_white.png"
-                                alt="Aria"
-                            />
-                            <span class="font-poppins font-semibold text-2xl">
-                                Luís Lima
+                <div class="flex flex-col gap-8">
+                    <h3 class="text-[#BBE3DB] text-2xl text-center">Cybersecurity and Auditing</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">17:50 - 18:00</p>
+                            <p class="font-manrope mt-4 text-sm md:mt-12">Authors <br />
+                            <span class="text-base">
+                                Rimsha Riaz, Pedro Carneiro
                             </span>
-                            <p class="font-manrope mt-4">
-                                Francisco Guimarães, Pedro Coutinho
-                            </p>
+                        </p>
                         </div>
-                        <div class="bg-[#4F3A83] p-4 py-8 md:col-span-2">
-                            <span class="font-poppins font-semibold text-2xl">
-                                Cybersecurity in the Financial Sector:
-                                Challenges and Solutions
-                            </span>
-                            <p class="font-manrope mt-4">
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Delectus quidem repudiandae
-                                optio blanditiis quis fugiat animi, veniam
-                                adipisci consequuntur minima quam sed magnam
-                                fugit ullam nesciunt atque quibusdam esse quae.
-                            </p>
-                        </div>
-                        <div class="bg-[#4F3A83] p-4">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
                             <span class="font-manrope text-2xl">
-                                17:30 - 17:45
+                                Cyber Security Audit Compliance in the Banking Sector: A Comparative Study of Pakistan and Europe
                             </span>
-                            <p
-                                class="mt-10 font-poppins font-semibold text-2xl"
-                            >
-                                Any cutting-edge research in the field of
-                                cybersecurity
+                            <p class="font-manrope mt-4 text-sm">
+                                This study examines the cybersecurity audit compli- ance frameworks in the banking sectors of Pakistan and Europe, highlighting their distinct approaches, strengths, and challenges. In Europe, regulatory frameworks such as the GDPR, NIS2 Directive, and ISO 27001 ensure comprehensive compliance, fos- tering robust cybersecurity measures across the financial sector. Conversely, Pakistan’s frameworks, guided by the State Bank of Pakistan and standards like ISO 27001 and PCI DSS, are still evolving, facing hurdles such as resource constraints and limited technical expertise. Through a comparative analysis, this paper identifies key differences in regulatory maturity, adoption rates, and implementation challenges. Recommendations are proposed to enhance cybersecurity audit compliance, including fostering collaboration, leveraging emerging technologies, and investing in capacity-building initiatives to safeguard financial systems from emerging cyber threats.
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">18:02 - 18:12</p>
+                            <p class="font-manrope mt-4 text-sm md:mt-12">Authors <br />
+                            <span class="text-base">
+                                Diego Santos Alvarez, Silvestre Malta, Pedro Filipe Cruz Pinto
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Assessing the Implementation of the EU 5G Toolbox Recomendations: A Pan-European Study on Cybersecurity Measures in 5G Networks
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                The rapid deployment of 5G networks across Europe presents significant cybersecurity challenges that must be addressed to ensure the integrity of critical digital infrastructures. The EU 5G Toolbox provides strategic and technical recommendations to mitigate risks and strengthen the resilience of 5G networks. This article highlights the importance of these recommendations by analyzing key documents and related studies, focusing on the challenges and best practices in implementation by European Union Member States. The findings emphasize the role of collaborative measures in reducing cyber threats and promoting a secure 5G ecosystem.
                             </p>
                         </div>
                     </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div class="bg-[#4F3A83] p-4">
-                            <span>Authored by:</span>
-                            <img
-                                class="rounded-full h-16 w-16 mt-2 mb-4"
-                                src="./images/logo_white.png"
-                                alt="Aria"
-                            />
-                            <span class="font-poppins font-semibold text-2xl">
-                                Luís Lima
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">18:14 - 18:24</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                José Dias
                             </span>
-                            <p class="font-manrope mt-4">
-                                Francisco Guimarães, Pedro Coutinho
-                            </p>
+                        </p>
                         </div>
-                        <div class="bg-[#4F3A83] p-4 py-8 md:col-span-2">
-                            <span class="font-poppins font-semibold text-2xl">
-                                Cybersecurity in the Financial Sector:
-                                Challenges and Solutions
-                            </span>
-                            <p class="font-manrope mt-4">
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Delectus quidem repudiandae
-                                optio blanditiis quis fugiat animi, veniam
-                                adipisci consequuntur minima quam sed magnam
-                                fugit ullam nesciunt atque quibusdam esse quae.
-                            </p>
-                        </div>
-                        <div class="bg-[#4F3A83] p-4">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
                             <span class="font-manrope text-2xl">
-                                17:30 - 17:45
+                                Security in Network Slicing in 5G: Challenges, Attack Taxonomy, and Mitigation Strategies
                             </span>
-                            <p
-                                class="mt-10 font-semibold font-poppins text-2xl"
-                            >
-                                Any cutting-edge research in the field of
-                                cybersecurity
+                            <p class="font-manrope mt-4 text-sm">
+                                This paper explores the security challenges associated with network slicing in 5G networks, a technology that enables the creation of virtual networks tailored to different use cases. It presents a detailed taxonomy of specific attacks, categorizing vulnerabilities across layers such as orchestration, virtualization, and inter-slice communication. Additionally, mitigation strategies are discussed, emphasizing the importance of real-time monitoring and robust access controls. This study contributes to a deeper understanding of threats in network slicing, providing a solid foundation for future research and developments in the security of 5G networks and beyond.
                             </p>
                         </div>
                     </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div class="bg-[#4F3A83] p-4">
-                            <span>Authored by:</span>
-                            <img
-                                class="rounded-full h-16 w-16 mt-2 mb-4"
-                                src="./images/logo_white.png"
-                                alt="Aria"
-                            />
-                            <span class="font-poppins font-semibold text-2xl">
-                                Luís Lima
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">18:26 - 18:36</p>
+                            <p class="font-manrope mt-4 text-sm md:mt-12">Authors <br />
+                            <span class="text-base">
+                                Joel Alves
                             </span>
-                            <p class="font-manrope mt-4">
-                                Francisco Guimarães, Pedro Coutinho
-                            </p>
+                        </p>
                         </div>
-                        <div class="bg-[#4F3A83] p-4 py-8 md:col-span-2">
-                            <span class="font-poppins font-semibold text-2xl">
-                                Cybersecurity in the Financial Sector:
-                                Challenges and Solutions
-                            </span>
-                            <p class="font-manrope mt-4">
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Delectus quidem repudiandae
-                                optio blanditiis quis fugiat animi, veniam
-                                adipisci consequuntur minima quam sed magnam
-                                fugit ullam nesciunt atque quibusdam esse quae.
-                            </p>
-                        </div>
-                        <div class="bg-[#4F3A83] p-4">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
                             <span class="font-manrope text-2xl">
-                                17:30 - 17:45
+                                Cybersecurity Analysis of Communication Protocols in Home Automation Devices: A Theoretical Investigation of Vulnerabilities and Solutions
                             </span>
-                            <p
-                                class="mt-10 font-semibold font-poppins text-2xl"
-                            >
-                                Any cutting-edge research in the field of
-                                cybersecurity
+                            <p class="font-manrope mt-4 text-sm">
+                                The rapid growth of the Internet of Things (IoT) has revolutionized home automation by enabling seamless integration and communication among smart devices. However, this advancement has introduced significant cybersecurity challenges due to vulnerabilities in communication protocols such as Zigbee, Z-Wave, Wi-Fi, and MQTT. This paper investigates these vulnerabilities, focusing on their alignment with the ETSI EN 303 645 standard, and highlights the challenges of practical implementation. By exploring cryptographic advancements, AIdriven intrusion detection systems, and compliance tools, this study proposes actionable solutions to enhance the security and resilience of IoT-enabled home ecosystems. The findings aim to bridge the gap between theoretical standards and realworld implementations, fostering a secure and user-centric smart environment.
                             </p>
                         </div>
                     </div>
-                </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">18:26 - 18:36</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Aurora Vasconcelos, Silvestre Malta, Emanuel Peres, António Rio Costa
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Zero Trust: A Comparative Analysis of the USA and European Contexts
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                This paper analyzes Zero Trust Architecture (ZTA) adoption in the USA and EU, exploring regulatory, cultural, and technical factors influencing implementation. It highlights the distinct challenges each region faces, particularly European complexities due to stringent GDPR regulations. Recommendations for region-specific frameworks supporting Zero Trust implementation are provided.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="text-[#BBE3DB] text-2xl text-center mt-4">Cryptography</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">18:50 - 19:00</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                João Rosa, Luís Barreto
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Assessment Analysis of Cryptographic Tools
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                This thesis presents both an assessment analysis and a bibliometric and bibliographic analysis of cryptographic tools. The bibliometric and bibliographic analysis examines the evolution, trends, and key research contributions within the field. Given the rapid growth of cryptography due to escalating cybersecurity threats, these analyses aim to provide valuable insights into the development and future directions of cryptographic research, enhancing our understanding of its critical role in modern cybersecurity solutions. Meanwhile, the assessment analysis focuses on evaluating the strengths, weaknesses, and effectiveness of various cryptographic tools to support secure digital communication and information protection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">19:02 - 19:12</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Anderson Sales
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                GitEncryptor: An Encryption and Privacy Tool for Securely Sharing and Storing Files on GitHub
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                GitEncryptor is a Python-based encryption tool that secures sensitive files on GitHub using AES-256 encryption. It ensures data confidentiality and integrity, allowing users to retain control over access keys. The tool addresses risks related to leaked GitHub API keys and provides a robust solution for data protection in public and private repositories.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="text-[#BBE3DB] text-2xl text-center mt-4">Attacks and Detection</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">19:45 - 19:55</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Pedro Ferraz
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Automating Sequence Attack Detection in APIs Through Dynamic Workflow Generation
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                API security is one of the main challenges in modern software architectures, especially with the proliferation of microservices. Sequence attacks, which exploit dependencies between different endpoint calls, pose a significant threat but are often overlooked by dynamic security scanners (DAST). This work proposes an approach to generate dynamic workflows that allow the automated execution of tests against these types of attacks. The solution uses collections of endpoints, such as those exported by Postman or defined in OpenAPI, to create call sequences that simulate real attack scenarios.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">19:57 - 20:07</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                André Alves, Silvestre Malta, Pedro Filipe Cruz Pinto
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                A Dataset for Machine Learning-Based CSRF Attack Detection
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                This article introduces a specialized dataset designed for analyzing and detecting Cross-Site Request Forgery (CSRF) attacks using machine learning. By including diverse traffic patterns and capturing HTTP request characteristics, the dataset serves as a foundational resource for future CSRF research and detection solutions.                   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">20:09 - 20:19</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Elton Moreno, Joel Vaz
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Brokenwire: An Attack on Fast EV Charging Stations
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                Brokenwire is an attack that exploits vulnerabilities in the Combined Charging System (CCS), enabling remote disruption of electric vehicle (EV) charging sessions. This study outlines the technical aspects of the attack and highlights the need for enhanced security measures in CCS to protect against potential widespread disruptions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">20:21 - 20:31</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Danilo Oliveira
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Vulnerability of Intel SoCs Running Intel's Modified MINIX 3 in Ring - 3
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                This paper investigates the CVE-2017-5689 vulnerability in Intel's Management Engine (ME) built on a modified MINIX 3 microkernel. The vulnerability allows remote attackers to gain full system control due to improper handling of null passwords. Mitigation strategies and insights into the security implications of Intel's ME architecture are discussed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">20:33 - 20:43</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Hugo Costa, Ricardo Santos, Silvestre Malta
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                A Comprehensive Taxonomy of Data Poisoning Attacks: Strategies, Impacts, and Mitigation Techniques
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                This paper explores data poisoning attacks in machine learning, their impact on model performance, and mitigation techniques. It establishes a taxonomy for attacks targeting model integrity and availability, emphasizing the need for secure data collection practices. This foundational resource advances understanding and defense mechanisms against data poisoning.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="text-[#BBE3DB] text-2xl text-center mt-4">Phishing and Social Engineering</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">20:45 - 20:55</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Elton Moreno, Joel Vaz
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Research into Susceptibility to Phishing and Social Engineering Techniques
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                Susceptibility to phishing and social engineering attacks remains a significant cybersecurity challenge, especially among young people with frequent access to digital platforms. This study used an online survey, with simulated scenarios and questions related to security practices, to assess behavior and identify areas of vulnerability in young Cape Verdeans with higher education, or in the process of doing so. The results suggest an encouraging level of awareness of digital risks, with many participants demonstrating safe practices, such as validating the authenticity of messages before interacting. However, greater vulnerability was found in messaging scenarios. This indicates the need for interventions to address behavioral gaps and strengthen the digital resilience of this group.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">20:57 - 21:07</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                António Fernando Braga Lima
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Análise do Impacto do Phishing no Ambiente Escolar: Um Estudo de Caso com Professores
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                The growing digitization of school environments has brought benefits to education but also expanded the attack surface for cybercrimes, such as phishing. This study investigates the impact of phishing on teachers’ digital behavior, highlighting existing vulnerabilities and proposing solutions to mitigate risks in school environments. Conducted at Escola Profissional de Vila do Conde, the research included questionnaires, interviews, and phishing simulations. Results showed that cybersecurity knowledge levels are a determinant in exposure to phishing attacks, emphasizing the urgent need for continuous training programs and robust institutional policies.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="text-[#BBE3DB] text-2xl text-center mt-4">Artificial Intelligence and Cybersecurity</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">21:25 - 21:35</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                José Machado
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Temporal Provenance Analysis in Deepfake Videos
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                The rise of deepfake technology has introduced challenges to maintaining the authenticity of digital media. This paper presents a methodology for Temporal Provenance Analysis as an approach to deepfake detection. By analyzing inconsistencies in video temporal metadata and anomalies in frame sequences, it uncovers patterns that signify manipulation. Supported by tools like FFmpeg, OpenCV, and Python libraries, the study aims to set the stage for future research in deepfake detection.                              
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">21:37 - 21:47</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                António Martins
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                An Analysis of the Impact of AI on Organizations with a Focus on Security
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                This paper examines the organizational impact of Generative Artificial Intelligence (GAI) on security. It highlights benefits like improved threat detection and risks such as data breaches and regulatory compliance challenges. The study aims to develop a framework for secure GAI adoption, addressing data privacy and ethical considerations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">21:49 - 21:59</p>
+                            <p class="font-manrope mt-4 text-sm md:mt-12">Authors <br />
+                            <span class="text-base">
+                                João Marques
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Artificial Intelligence in Industry 5.0: Challenges, Opportunities, and Cybersecurity Perspectives
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                This paper examines AI's role in Industry 5.0, emphasizing human-machine collaboration for industrial resilience and cybersecurity. Challenges such as data dependency, integration barriers, and reliability issues are addressed. Emerging technologies like Edge Computing and Federated Learning are discussed as solutions to enhance AI's transformative potential in secure industrial operations.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="text-[#BBE3DB] text-2xl text-center mt-4">Emerging Technologies and Infrastructures</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-[#4F3A83]">
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">22:01 - 22:11</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Marco Moreira
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#BBE3DB] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                Assess Memory Isolation Mechanisms Used on Cloud Providers
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                This research evaluates the memory isolation mechanisms of cloud providers to ensure secure and isolated environments for virtual machines. By developing scripts to analyze memory dumps, the study identifies potential cross-VM data contamination and assesses the effectiveness of current isolation mechanisms. Insights aim to improve memory security practices in virtualized cloud environment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-6 text-white">
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 text-right">
+                            <p class="font-manrope text-2xl">22:13 - 22:23</p>
+                            <p class="font-manrope mt-4 text-sm">Authors <br />
+                            <span class="text-base">
+                                Francisco Ferreira, Sérgio Lopes
+                            </span>
+                        </p>
+                        </div>
+                        <div class="bg-[#4F3A83] p-4 lg:py-8 lg:col-span-5">
+                            <span class="font-manrope text-2xl">
+                                ForensIIoT: A Framework for Forensic Analysis in IIoT Environments
+                            </span>
+                            <p class="font-manrope mt-4 text-sm">
+                                Industrial IoT (IIoT) environments pose unique challenges for cybersecurity due to their heterogeneous nature, limited computational resources, and increasing attack complexity targeting critical infrastructures. This paper introduces ForensIIoT, a centralized framework for automated log collection, integrity assurance, and evidence management in IIoT environments. Through simulated attack scenarios and performance evaluations, ForensIIoT demonstrates its ability to improve incident response, forensic readiness, and compliance with regulatory standards. This framework represents a significant step toward robust and scalable forensic methodologies for industrial settings.
+                            </p>
+                        </div>
+                    </div>
+                </div>                   
             </div>
-        </section> -->
+        </section>
 
-        <section id="Sponsors" class="bg-[#5A4984] py-16">
-            <h1
-                class="text-white text-3xl font-medium text-center font-poppins mb-8"
+        <section id="Sponsors" class="bg-[#25102b] py-10">
+            <h2
+                class="text-white text-3xl font-medium text-center font-manrope mb-2"
             >
                 Sponsors
-            </h1>
+            </h2>
 
             <!-- <div class="flex items-center justify-center min-w-screen"> -->
             <div
-                class="overflow-hidden whitespace-nowrap w-full flex justify-center text-white text-6xl font-bold font-poppins"
+                class="overflow-hidden whitespace-nowrap w-full flex justify-center text-white text-6xl font-bold font-manrope"
             >
-                <span class="mx-8 h-24 w-24"><img src="images/DK_logo.png"/></span>
+                <span class="flex items-center w-24"><img src="images/DK_logo.png"/></span>
+                <span class="flex items-center h-24 w-80"><img src="images/logo_master.png"/></span>
+                <span class="flex items-center w-24 h-auto"><img src="images/logo_ipvc.png"/></span>
             </div>
             <!-- </div> -->
         </section>
@@ -361,33 +588,42 @@
             class="bg-[#BBE3DB] px-6 py-16 text-[#5A4984] flex flex-col gap-8"
         >
             <div>
-                <span class="text-5xl font-poppins">CyberSec25</span>
+                <span class="text-5xl font-manrope">CyberSec25</span>
+                <div class="pt-8">
+                    <p class="text-2xl font-medium font-manrope mb-4">Other editions</p>
+                    <ul class="flex flex-col md:flex-row">
+                        <li class="md:pr-2 md:border-r-2 md:border-[#5A4984]"><a class="hover:text-[#18CE9F]" href="http://mciber.estg.ipvc.pt/cybersec/21/">CyberSec 2021</a></li>
+                        <li class="md:px-2 md:border-r-2 md:border-[#5A4984]"><a class="hover:text-[#18CE9F]" href="http://mciber.estg.ipvc.pt/cybersec/22/">CyberSec 2022</a></li>
+                        <li class="md:px-2 md:border-r-2 md:border-[#5A4984]"><a class="hover:text-[#18CE9F]" href="http://mciber.estg.ipvc.pt/cybersec/23/">CyberSec 2023</a></li>
+                        <li class="md:pl-2"><a class="hover:text-[#18CE9F]" href="https://cybersec24.pt/">CyberSec 2024</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="gap-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6">
                 <div>
-                    <span class="text-2xl font-medium font-poppins"
+                    <span class="text-2xl font-medium font-manrope"
                         >General Chair</span
                     >
-                    <ul class=" pl-9 mt-5">
+                    <ul class="mt-5">
                         <li class="text-left mb-2">Aurora Vasconcelos</li>
                     </ul>
                 </div>
                 <div>
-                    <span class="text-2xl font-medium font-poppins"
+                    <span class="text-2xl font-medium font-manrope"
                         >Co-Chairs</span
                     >
-                    <ul class=" pl-9 mt-5">
+                    <ul class="mt-5">
                         <li class="text-left mb-2">Francisco Ferreira</li>
                         <li class="text-left mb-2">João Rosa</li>
                         <li class="text-left mb-2">Pedro Ferraz</li>
                     </ul>
                 </div>
                 <div>
-                    <span class="text-2xl font-medium font-poppins">
+                    <span class="text-2xl font-medium font-manrope">
                         Program Chair
                     </span>
-                    <ul class=" pl-9 mt-5">
+                    <ul class="mt-5">
                         <li class="text-left mb-2">Francisco Ferreira</li>
                         <li class="text-left mb-2">José Dias</li>
                         <li class="text-left mb-2">Braga Lima</li>
@@ -395,19 +631,19 @@
                     </ul>
                 </div>
                 <div>
-                    <span class="text-2xl font-medium font-poppins"
+                    <span class="text-2xl font-medium font-manrope"
                         >Publication Chair</span
                     >
-                    <ul class=" pl-9 mt-5">
+                    <ul class="mt-5">
                         <li class="text-left mb-2">José Machado</li>
                         <li class="text-left mb-2">Gonçalo Lima</li>
                     </ul>
                 </div>
                 <div>
-                    <span class="text-2xl font-medium font-poppins"
+                    <span class="text-2xl font-medium font-manrope"
                         >Marketing Chair</span
                     >
-                    <ul class=" pl-9 mt-5">
+                    <ul class="mt-5">
                         <li class="text-left mb-2">Hugo Costa</li>
                         <li class="text-left mb-2">Marco Moreira</li>
                         <li class="text-left mb-2">Danilo Oliveira</li>
@@ -418,14 +654,21 @@
                     </ul>
                 </div>
                 <div>
-                    <span class="text-2xl font-medium font-poppins"
+                    <span class="text-2xl font-medium font-manrope"
                         >Local Chair</span
                     >
-                    <ul class=" pl-9 mt-5">
+                    <ul class="mt-5">
                         <li class="text-left mb-2">Diego Alvarez</li>
                         <li class="text-left mb-2">Joel Alves</li>
                     </ul>
                 </div>
+            </div>
+            <div>
+                <ul class="flex flex-row gap-4 justify-center">
+                    <li><a class="hover:text-[#18CE9F]" href="https://www.facebook.com/ipvc.oficial/"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a class="hover:text-[#18CE9F]" href="https://www.instagram.com/ipvc/?hl=en"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a class="hover:text-[#18CE9F]" href="https://www.linkedin.com/school/instituto-polit-cnico-de-viana-do-castelo/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
         </footer>
 

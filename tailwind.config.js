@@ -6,6 +6,7 @@ module.exports = {
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
                 manrope: ["Manrope", "sans-serif"],
+                onabort: ["Onabort", "sans-serif"],
             },
         },
     },
